@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <div class="content-block">
+            <img class="bloco bloco1">
+            <img class="bloco bloco2"/>
+        </div>
+
+        <div>
+            <img class="image" src="garota-com-oculos.png"/>
+        </div>
+
+        <div>
+            <div class="text-title">
+                <h1>Grande</h1>
+                <h2>Liquidação de</h2>
+                <h2>Reabertura</h2>
+            </div>
+            <div class="text-subtitle">
+                <h3>Horário de Atendimento</h3>
+                <h4>De segunda à domingo</h4>
+                <h4>Das 10 horas às 17 horas</h4>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    
+</body>
+</html>
+
+<style>
+
+    .container-fluid 
+    {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image 
+    {
+        width: 389px;
+        height: 479px;
+        z-index: 1;
+    }
+
+    .content-block 
+    {
+        position: relative;
+    }
+
+    .bloco
+    {
+        display: block;
+        width: 250px;
+        height: 180px;
+        z-index: -1;
+        position: absolute;
+        background-color: #f0e2c1;
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, .1);
+    }
+
+    .bloco1
+    {
+        right: -10rem;
+        top: 8rem;
+    }
+
+    .bloco2 
+    {
+        bottom: 5rem;
+        left: 18rem;
+        height: 250px;
+
+    }
+
+    .container-fluid div:nth-child(3) 
+    {
+        position: relative;
+    }
+
+    .container-fluid div:nth-child(3) .text-title 
+    {
+        position: absolute;
+        left: -3rem;
+    }
+
+    .container-fluid div:nth-child(3) .text-title h1,h2
+    {
+        font-weight: bold;
+        text-align: end;
+        font-size: 3em;
+        text-transform: uppercase;
+        text-decoration: underline;
+        color: #964D4B;
+    }
+
+    .container-fluid div:nth-child(3) .text-subtitle
+    {
+        margin-top: 23rem;
+        margin-left: 20px;
+    }
+
+    .container-fluid div:nth-child(3) .text-subtitle h3 
+    {
+        text-transform: uppercase;
+        text-decoration: underline;
+        color: #964D4B;
+    }
+
+    .container-fluid div:nth-child(3) .text-subtitle h4 
+    {
+        text-transform: uppercase;
+        color: #964D4B;
+    }
+
+    @media (max-width: 767.98px) 
+    {
+
+        .content-block
+        {
+            display: none;
+        }
+
+        .container-fluid 
+        {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 120px 50px;
+            height: auto;
+        }
+
+        .container-fluid div:nth-child(3) .text-title 
+        {
+            position: relative;
+            margin-top: 80px;
+        }
+
+        .container-fluid div:nth-child(3) .text-title h1,h2 
+        {
+            position: relative;
+            display: block;
+            text-align: center;
+            margin-left: 50px;
+        }
+
+        .container-fluid div:nth-child(3) .text-subtitle 
+        {
+            margin-top: 4rem;
+            margin-left: 0;
+        }
+
+        .container-fluid div:nth-child(3) .text-subtitle h3,h4 
+        {
+            text-align: center;
+
+        }
+    }
+</style>
